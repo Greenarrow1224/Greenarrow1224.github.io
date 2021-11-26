@@ -218,67 +218,6 @@
 </article>
 
     
-    <article
-  id="post-Lua编程入门(一)"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2021/07/22/Lua%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8(%E4%B8%80)/"
-    >Lua 编程入门(一)</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2021/07/22/Lua%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8(%E4%B8%80)/" class="article-date">
-  <time datetime="2021-07-22T09:27:17.000Z" itemprop="datePublished">2021-07-22</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="Lua编程入门-一"><a href="#Lua编程入门-一" class="headerlink" title="Lua编程入门(一)"></a>Lua编程入门(一)</h1><h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p>Lua 是一门扩展式程序设计语言，被设计成支持通用过程式编程，并有相关数据描述设施。同时对面向对象编程、函数式编程和数据驱动式编程也提供了良好的支持。它作为一个强大、轻量的嵌入式脚本语言，可供任何需要的程序使用。Lua 由 <em>clean C（标准 C 和 C++ 间共通的子集）</em> 实现成一个库。</p>
-<p>作为一门扩展式语言，Lua 没有 “main” 程序的概念：它只能 <em>嵌入</em> 一个宿主程序中工作，该宿主程序被称为 <em>被嵌入程序</em> 或者简称 <em>宿主</em> 。 宿主程序可以调用函数执行一小段 Lua 代码，可以读写 Lua 变量，可以注册 C 函数让 Lua 代码调用。依靠 C 函数，Lua 可以共享相同的语法框架来定制编程语言，从而适用不同的领域。Lua 的官方发布版包含一个叫做 <code>lua</code> 的宿主程序示例，它是一个利用 Lua 库实现的完整独立的 Lua 解释器，可用于交互式应用或批处理。</p>
-<h2 id="2-基本概念"><a href="#2-基本概念" class="headerlink" title="2.基本概念"></a>2.基本概念</h2><h3 id="2-1值与类型"><a href="#2-1值与类型" class="headerlink" title="2.1值与类型"></a>2.1值与类型</h3><p> Lua 是一门<em>动态类型语言</em>。这意味着<strong>变量没有类型；只有值才有类型。</strong>语言中不设类型定义。所有的值携带自己的类型。 </p>
-<p>注意： Lua 中所有的值都是 <em>一等公民</em>。这意味着所有的值均可保存在变量中、当作参数传递给其它函数、以及作为返回值。 </p>
-<h3 id="2-2八种基本类型"><a href="#2-2八种基本类型" class="headerlink" title="2.2八种基本类型"></a>2.2八种基本类型</h3><p>Nil： 只有值nil属于该类，表示一个<strong>无效值</strong>(在条件表达式中相当于false)； 一个全局变量没有被赋值以前默认值为nil；给全局变量赋nil可以删除该变量。 </p>
-<p><strong>注意：nil作比较时应该加上双引号。</strong></p>
-<p>Boolean：    包含两个值fasle和true； 但要注意Lua中所有的值都可以作为条件；在控制结构的条件中除了false和nil为假，其他值都为真。所以Lua认为0和空串都是真。 </p>
-<p>Number：     整数和实数，Lua 中的所有数都用双精度浮点数表示。 </p>
-<p>String： 字符串类型，表示一个不可变的字节序列；由一对<strong>双引号</strong>或<strong>单引号</strong>来表示 ，由于Lua中字符串是不可以修改的，所以我们可以创建一个新的变量存放所需要的字符串。 Lua 的字符串与编码无关；它不关心字符串中具体内容。  </p>
-<p>Function：由<strong>C</strong>或者<strong>Lua</strong>编写的函数。</p>
-<p>Userdata(自定义类型)：表示任意存储在变量中的<strong>C</strong>数据结构。</p>
-<p>Thread：表示了一个独立的执行序列，被用于实现协程，Lua的线程与操作系统的线程毫无关系； Lua 为所有的系统，包括那些不支持原生线程的系统，提供了协程支持。 </p>
-<p>Table： 表是 Lua 中唯一的数据结构，它可被用于表示普通数组、序列、符号表、集合、记录、图、树等等。 </p>
-<h3 id="2-3代码块-block"><a href="#2-3代码块-block" class="headerlink" title="2.3代码块(block)"></a>2.3代码块(<strong>block</strong>)</h3><p>​    代码块指一个控制结构内，一个函数体，或者一个chunk(变量被声明的那个文件或者文本串)。也就是do…end内的那一部分。</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-    </footer>
-  </div>
-
-    
- 
-    
-</article>
-
-    
   </article>
   
 
